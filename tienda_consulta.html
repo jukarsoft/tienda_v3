@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Consulta pelotas</title>
+	<link rel="shortcut icon" href="img/ciber.ico" type="image/x-icon">
+	<link rel="icon" href="img/ciber.ico" type="image/x-icon">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/tienda_consulta.js"></script>
+	<style type="text/css">
+		body {
+			background-color: #66CDAA;
+		}
+		div.productos {
+			width:700px; 
+			text-align:center; 
+			padding:20px; 
+			margin:auto; 
+			border: 3px solid #9C767C;
+			background-color: #66CDAA;
+			vertical-align: top;
+		}
+		img {
+			height: 80px;
+		}
+		p {
+			text-align: left;
+		}
+		label {
+			display: inline-block;
+			width: 80px;
+			font-weight: bold;
+		}
+		table {
+			text-align: center;
+		}
+		#paginas span {color:blue; cursor:pointer;}
+		
+	</style>
+</head>
+<body>
+	<div class="productos">
+		<center><h2>CONSULTA PRODUCTOS</h2></center>
+		<table border="2" id='relacion'>
+			<tr><th style="width: 400px;">id</th><th>nombre</th><th>descripcion</th><th>stock</th></tr>
+			
+		</table><br>
+		<center id='paginas'></center>
+		<br>
+		<br>
+		<a href="tienda_menu.html">Volver al menu principal</a>
+	</div>
+</body>
+</html>

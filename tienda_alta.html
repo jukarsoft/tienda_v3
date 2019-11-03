@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alta pelota</title>
+	<link rel="shortcut icon" href="img/ciber.ico" type="image/x-icon">
+	<link rel="icon" href="img/ciber.ico" type="image/x-icon">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="js/tienda_alta.js"></script>
+	<style type="text/css">
+		body {
+			background-color: #66CDAA;
+		}
+		div.productos {
+			width:450px; 
+			text-align:justify; 
+			padding:20px; 
+			margin:auto; 
+			border: 3px solid #9C767C;
+			background-color: #66CDAA;
+			vertical-align: top;
+		}
+		label {
+			display: inline-block;
+			width: 100px;
+			font-weight: bold;
+			vertical-align: top;
+		}
+		.error {background-color: lightgrey;}
+	</style>
+</head>
+<body>
+	<div class="productos">
+		<center><h2>ALTA PRODUCTOS</h2></center><br>
+		<form  id="formulario"> 
+			<label>Nombre: </label><input type="text" maxlength="80" name="nombre" id="nombre"/><br><br>
+			<label>Descripción: </label><textarea style="width:300px; height:50px" name="descripcion" id="descripcion"></textarea><br><br>
+			<label>Marca: </label>
+			<select name='marca' id='marca'>
+				
+			</select>
+				
+			<br><br>
+			<label>Stock: </label><input type="number" name="stock" id="stock"/><br><br>
+			<input type="button" name="alta" id='alta' value="Alta producto" />
+		</form><br><br>
+		<a href="tienda_menu.html">Volver al menu principal</a>
+	</div>
+</body>
+</html>

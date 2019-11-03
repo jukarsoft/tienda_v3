@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modificación pelotas</title>
+	<link rel="shortcut icon" href="img/ciber.ico" type="image/x-icon">
+	<link rel="icon" href="img/ciber.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/tienda_modificacion.js"></script>
+	<style type="text/css">
+		body {
+			background-color: #66CDAA;
+		}
+		div.productos {
+			position: relative;
+			width:450px; 
+			text-align:justify; 
+			padding:20px; 
+			margin:auto; 
+			border: 3px solid #9C767C;
+			background-color: #66CDAA;
+			vertical-align: top;
+		}
+		
+		p {
+			text-align: left;
+		}
+		label {
+			display: inline-block;
+			width: 100px;
+			font-weight: bold;
+			vertical-align: top;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="productos">
+		<center><h2>MODIFICACION PRODUCTOS</h2></center><br>
+		<form> 
+			<input type="hidden" name="id" id='id'>
+			<label>Nombre: </label>
+			<input type="text" maxlength="80" name="nombre" id="nombre" >
+			<br><br>
+			<label>Descripción: </label>
+			<textarea style="width:300px; height:50px" name="descripcion" id="descripcion"></textarea>
+			<br><br>
+			<label>Stock: </label>
+			<input type="number" name="stock" id="stock" >
+			<br><br>
+			<input type="button" name="modi" id="modi"  value="Actualizar">
+			<input type="button" name="baja" id="baja" value="Eliminar" />
+		</form><br><br>
+		<a href="tienda_menu.html">Volver al menu principal</a>
+	</div>
+</body>
+</html>
